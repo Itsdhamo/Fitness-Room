@@ -44,6 +44,7 @@ public class ExcercizeController {
 		return service.updateExcercize(exc, id);
 	}
 	
+	@GetMapping("findall")
 	public ResponseEntity<ResponseStructure<List<ExcercizeDTO>>> findExcercize(){
 		return service.findall();
 	}
